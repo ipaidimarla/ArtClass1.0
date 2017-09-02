@@ -445,3 +445,7 @@ template {
 [hidden] {
   display: none;
 }
+
+ul,ol li{
+  list-style: none;
+}
