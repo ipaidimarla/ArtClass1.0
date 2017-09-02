@@ -30,6 +30,21 @@ body{
 .main-footer{
     margin-top: 0;
 }
+.image-gallery{
+    width:80%;
+    margin:0 auto;
+    padding-top:4.5em;
+}
+.image-gallery ul li {
+    display: inline-block;
+    padding: 8px;
+    background:white;
+    margin:10px;
+}
+
+.image-gallery ul li img {
+    display: block;
+}
 
 
 
@@ -125,7 +140,21 @@ video{
     width:100%;
 
 }
+.wrap{
+    min-height: calc(100vh - 50px);
+}
 
+
+#overlay{
+
+    background: rgba(0,0,0, 0.7);
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display:none;
+}
 @media (min-width:960px) {
 
 

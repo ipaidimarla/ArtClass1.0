@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+<body ng-app="app" ng-controller="mainCtrl">
 <div class="wrap">
     <header class="main-header">
 
 
             <ul class="main-nav" id="navs">
                 <li class="active-tab"><a href="" ng-click="showHome()" >Home</a></li>
-                <li><a href="" ng-click="showExperience()"> Gallery</a></li>
+                <li><a href="" ng-click="showGallery()"> Gallery</a></li>
                 <li><a href="" ng-click="showEducation()">Register</a></li>
                 <li><a href="" ng-click="showContact()">Contact</a></li>
             </ul>
@@ -30,7 +30,7 @@
 
 
     </header>
-    <div class="content">
+    <div class="content" ng-if="bshowHome">
 
         <p class="tag">A perfect place to sharpen your drawing skills </p>
 
@@ -39,6 +39,8 @@
 
 
     </div>
+
+    <div image-gallery ng-if="bshowGallery"></div>
 
 
 
@@ -53,6 +55,11 @@
 
 
 </footer>
+
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app/app.js"></script>
 
 </body>
 </html>
