@@ -145,12 +145,12 @@ video{
 }
 
 .image-gallery img{
-    transition: 2s;
+    transition: all .5s ease-in-out;
 }
 
 .image-gallery img:hover{
 
-    width: scale(2.0);
+    transform: scale(3.0);
     
 }
 
