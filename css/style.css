@@ -144,6 +144,16 @@ video{
     min-height: calc(100vh - 50px);
 }
 
+.image-gallery img{
+    transition: 2s;
+}
+
+.image-gallery img:hover{
+
+    width: scale(2.0);
+    
+}
+
 
 #overlay{
 

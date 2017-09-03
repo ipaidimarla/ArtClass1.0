@@ -38,7 +38,7 @@ app.controller('mainCtrl', function($scope){
     $('body').append($overlay);
 
 
-    $("ul li a").click(function(e){
+    $("#gallery a").click(function(e){
 
         if($(this).parent().parent().hasClass('main-nav')) {
             e.preventDefault();
@@ -49,7 +49,7 @@ app.controller('mainCtrl', function($scope){
         alert('yes');
 
 
-        $('.active-tab').not($class).removeClass('active-tab');
+
         $($overlay).show();
 
     })
